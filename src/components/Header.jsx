@@ -31,9 +31,9 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-40 max-[1030px]:px-20 max-[850px]:px-10 ${
+      className={`fixed top-0 w-full z-50 transition duration-300 px-48 max-[1030px]:px-20 max-[850px]:px-10 ${
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          ? "bg-[#050414]/5 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
@@ -49,7 +49,7 @@ const Header = () => {
 
         {/* nav-items */}
         <div className="max-[601px]:hidden">
-          <ul className="flex items-center justify-center space-x-6 text-lg max-[850px]:text-sm font-medium">
+          <ul className="flex items-center justify-center space-x-10 text-lg max-[850px]:text-sm font-medium">
             {navItems.map((i) => (
               <li
                 className={`hover:text-[#8245ec] ${
@@ -69,7 +69,7 @@ const Header = () => {
         </div>
 
         {/* social media icons */}
-        <div className="flex space-x-4 max-[601px]:hidden">
+        <div className="flex space-x-6 max-[601px]:hidden">
           <a
             href="https://github.com/MamoonAhmadKhan"
             target="_blank"
