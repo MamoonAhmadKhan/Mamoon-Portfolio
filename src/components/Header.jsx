@@ -3,32 +3,38 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
-  const [focusedItem, setFocusedItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [focusedItem, setFocusedItem] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 50);
-  };
-
+  // Detect scroll and change navbar background
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
 
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Smooth scroll function
+  const handleNavItems = (sectionId) => {
+    setFocusedItem(sectionId);
+    setIsOpen(false);
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const navItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
+    { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
   ];
-
-  const handleNavItems = (itemId) => {
-    setFocusedItem(itemId);
-    setIsOpen(false);
-  };
-
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-48 max-[1030px]:px-20 max-[850px]:px-10 ${
