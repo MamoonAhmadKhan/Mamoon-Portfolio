@@ -5,7 +5,7 @@ import profilePic from "../assets/profile_pic.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 px-48 max-[1100px]:px-20 font-sans">
+    <section id="about" className="py-10 px-48 max-[1100px]:px-20 font-sans">
       <div className="flex max-[800px]:flex-col-reverse items-center justify-between">
         {/* left side */}
         <div className="text-white text-left max-[800px]:text-center max-[800px]:w-full mt-8 w-1/2">

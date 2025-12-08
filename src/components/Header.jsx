@@ -31,19 +31,19 @@ const Header = () => {
   const navItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
+    { id: "certificates", label: "Certifications" }
   ];
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-48 max-[1030px]:px-20 max-[850px]:px-10 ${
+      className={`fixed top-0 w-full z-50 transition duration-300 px-48 max-[1200px]:px-20 max-[850px]:px-10 ${
         isScrolled
           ? "bg-[#050414]/5 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
-      <div className="text-white py-6 flex justify-between items-center">
+      <div className="text-white py-5 flex justify-between items-center">
         {/* logo */}
         <div className="text-xl max-[1030px]:text-lg max-[850px]:text-sm font-bold max-[1030px]:font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>

@@ -98,7 +98,7 @@ export const SkillsInfo = [
       image: foodyLogo,
       tags: ["HTML", "CSS", "JavaScript", "React JS", "Swiggy API", "TailwindCSS"],
       github: "https://github.com/MamoonAhmadKhan/FoodStore",
-      webapp: "#",
+      webapp: null,
     },
     {
       id: 2,
