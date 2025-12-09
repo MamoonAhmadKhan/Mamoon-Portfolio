@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { certificates } from "../constants.js"; // Import the education data
 
 const Certificates = () => {
@@ -11,6 +11,19 @@ const Certificates = () => {
   const handleCloseModal = () => {
     setSelectedCourse(null);
   };
+
+  useEffect(() => {
+    if (selectedCourse) {
+      document.body.style.overflow = "hidden"; // Disable scroll
+    } else {
+      document.body.style.overflow = "auto"; // Enable scroll
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup
+    };
+  }, [selectedCourse]);
+
 
   return (
     <section
@@ -84,7 +97,7 @@ const Certificates = () => {
       {/* Modal Container */}
       {selectedCourse && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 overflow-y-auto">
-          <div className="bg-gray-900 scrollbar-hide rounded-xl shadow-2xl w-[90%] h-11/12 max-w-3xl overflow-y-scroll relative">
+          <div className="bg-gray-900 scrollbar-hide rounded-xl shadow-2xl w-[90%] h-10/12 max-w-3xl overflow-y-scroll relative">
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}

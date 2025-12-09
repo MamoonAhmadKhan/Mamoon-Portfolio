@@ -13,17 +13,16 @@ const Projects = () => {
   };
 
   useEffect(() => {
-  if (selectedProject) {
-    document.body.style.overflow = "hidden";   // Disable scroll
-  } else {
-    document.body.style.overflow = "auto";     // Enable scroll
-  }
+    if (selectedProject) {
+      document.body.style.overflow = "hidden"; // Disable scroll
+    } else {
+      document.body.style.overflow = "auto"; // Enable scroll
+    }
 
-  return () => {
-    document.body.style.overflow = "auto";     // Cleanup
-  };
-}, [selectedProject]);
-
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup
+    };
+  }, [selectedProject]);
 
   return (
     <section
@@ -130,7 +129,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="w-1/2 cursor-pointer bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
-                     {selectedProject.webapp ? "View Live" : "Not Live"}
+                    {selectedProject.webapp ? "View Live" : "Not Live"}
                   </a>
                 </div>
               </div>
