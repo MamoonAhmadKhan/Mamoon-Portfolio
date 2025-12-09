@@ -45,7 +45,7 @@ const About = () => {
 
           {/* resume download button */}
           <a
-            href="https://drive.google.com/file/d/1OAHQWdrjIkRdINjlmtHqPK5mu1slAoug/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QEGCHH_uMo8A5kJk78u5PhJ3Q-lI2INP/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer inline-block text-white py-3 px-8 max-[425px]:py-1 max-[425px]:px-5 max-[800px]:py-2 max-[800px]:px-7 min-[2300px]:py-4 min-[2300px]:px-9 rounded-full mt-4 max-[425px]:text-sm max-[425px]:font-medium text-lg min-[2300px]:text-xl font-bold transition duration-300 transform hover:scale-105"
