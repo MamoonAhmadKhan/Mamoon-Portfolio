@@ -22,6 +22,12 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // Education Section Logo's
 import ggsipuLogo from './assets/education_logo/GGSIPU_Logo.png';
 
+// Certifications Section Logo's
+import reactCourseLogo from './assets/education_logo/reactCourse.png';
+import dsaCourseLogo from './assets/education_logo/udemy.png';
+import reactCertificate from './assets/education_logo/reactCertificate.png';
+import dsaCertificate from './assets/education_logo/dsaCertificate.jpg';
+
 // Project Section Logo's
 import botflixLogo from './assets/work_logo/botflix.png';
 import foodyLogo from './assets/work_logo/foody.png';
@@ -76,6 +82,27 @@ export const SkillsInfo = [
       grade: "7.81 CGPA",
       desc: "I have completed my Bachelor's degree (BCA) in Computer Applications from Guru Gobind Singh Indraprastha University, New Delhi. During my time at college, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures & Algorithms, Object-Oriented Programming (OOPs), Database Management Systems (DBMS), Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at my University has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Bachelor of Computer Applications - BCA",
+    },
+  ];
+
+  export const certificates = [
+    {
+      id: 0,
+      img: reactCourseLogo,
+      school: "NamasteDev.com - Akshay Saini",
+      date: "Sept 2025 - Nov 2025",
+      desc: "I have completed the ‘Namaste React’ course offered by NamasteDev.com. Throughout the course, I gained hands-on experience with React.js, covering core concepts such as component architecture, hooks, state management, routing, and performance optimization. The program also strengthened my skills in Redux-Toolkit for scalable state management and Tailwind CSS for efficient, utility-first styling. Alongside these technologies, I worked on building real-world frontend applications, improving my ability to write clean, maintainable, and production-ready code. This course has significantly enhanced my frontend engineering capabilities.",
+      degree: "Namaste React",
+      cert: reactCertificate,
+    },
+     {
+      id: 1,
+      img: dsaCourseLogo,
+      school: "Udemy - Abdul Bari",
+      date: "Oct 2023 - March 2024",
+      desc: "I completed the “Mastering Data Structures & Algorithms using C and C++” course on Udemy. The course strengthened my foundation in core data structures such as arrays, linked lists, stacks, queues, trees, graphs, heaps, and hash tables, along with essential algorithmic techniques including recursion, sorting, searching, and dynamic programming. Through extensive coding practice in C and C++, I developed the ability to write efficient, optimized, and well-structured solutions to complex computational problems. ",
+      degree: "Mastering Data Structures & Algorithms using C and C++",
+      cert: dsaCertificate,
     },
   ];
   

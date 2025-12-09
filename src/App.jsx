@@ -6,6 +6,7 @@ import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import BlurBlob from "./components/BlurBlob.jsx";
+import Certificates from "./components/Certificates.jsx";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Skills />
         <Projects />
         <Education />
+        <Certificates />
         <Contact />
         <Footer />
       </div>
