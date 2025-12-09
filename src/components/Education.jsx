@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-16 pb-16 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-16 pb-16 px-[12vw] md:px-[7vw] lg:px-[16vw] bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] clip-path-custom font-sans bg-skills-gradient clip-path-custom-3"
     >
       {/* Section Title */}
       <div className="text-center mb-16">

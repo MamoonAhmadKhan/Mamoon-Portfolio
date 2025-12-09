@@ -55,7 +55,7 @@ const Header = () => {
 
         {/* nav-items */}
         <div className="max-[601px]:hidden">
-          <ul className="flex items-center justify-center space-x-10 text-lg max-[850px]:text-sm font-medium">
+          <ul className="flex items-center justify-center space-x-8 text-lg max-[850px]:text-sm font-medium">
             {navItems.map((i) => (
               <li
                 className={`hover:text-[#8245ec] ${

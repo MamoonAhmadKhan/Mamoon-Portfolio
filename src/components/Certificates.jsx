@@ -15,7 +15,7 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="py-16 pb-16 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-16 pb-16 bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] clip-path-custom px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -103,7 +103,7 @@ const Certificates = () => {
                 />
 
                 <a
-                className="w-1/2 cursor-pointer bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                className="w-10/12 cursor-pointer bg-purple-600 hover:bg-purple-800 text-white max-[500px]:text-xs lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                 
                 href={selectedCourse.cert}
                 download
