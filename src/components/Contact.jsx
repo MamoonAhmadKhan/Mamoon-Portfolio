@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Snowfall from "react-snowfall";
 
 const Contact = () => {
   const form = useRef();
@@ -49,6 +50,7 @@ const Contact = () => {
       id="contact"
       className="flex flex-col items-center justify-center bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] py-16 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
+      <Snowfall snowflakeCount={20} color="orange" />
       {/* Toast Container */}
       <ToastContainer />
 

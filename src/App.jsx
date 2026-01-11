@@ -7,11 +7,13 @@ import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import BlurBlob from "./components/BlurBlob.jsx";
 import Certificates from "./components/Certificates.jsx";
+import Snowfall from "react-snowfall";
 
 function App() {
 
   return (
     <>
+    <Snowfall snowflakeCount={20} color="#82C3D9" />
     <div className="bg-[#050414]">
 
       <BlurBlob />

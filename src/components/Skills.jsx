@@ -1,6 +1,7 @@
 import React from "react";
 import { SkillsInfo } from "../constants.js";
 import Tilt from "react-parallax-tilt";
+import Snowfall from "react-snowfall";
 
 const Skills = () => {
   return (
@@ -8,6 +9,7 @@ const Skills = () => {
       id="skills"
       className="py-16 px-48 max-[1100px]:px-20 font-sans bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] clip-path-custom"
     >
+      <Snowfall snowflakeCount={20} color="pink" />
       <div className="text-center mb-8">
         {/* skills */}
         <h2 className="text-3xl font-bold text-white">SKILLS</h2>

@@ -1,5 +1,6 @@
 import React from "react";
 import { education } from "../constants.js"; // Import the education data
+import Snowfall from "react-snowfall";
 
 const Education = () => {
   return (
@@ -7,6 +8,7 @@ const Education = () => {
       id="education"
       className="py-16 pb-16 px-[12vw] md:px-[7vw] lg:px-[16vw] bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] clip-path-custom font-sans bg-skills-gradient clip-path-custom-3"
     >
+      <Snowfall snowflakeCount={20} color="#82C3D9" />
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
