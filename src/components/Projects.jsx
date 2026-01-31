@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { projects } from "../constants.js";
-import Snowfall from "react-snowfall";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -30,7 +29,6 @@ const Projects = () => {
       id="work"
       className="pb-96 py-16 px-48 max-[1100px]:px-20 font-sans relative bg-[linear-gradient(38.73deg,rgba(204,0,187,0.15)0%,rgba(201,32,184,0)50%),linear-gradient(141.27deg,rgba(0,70,209,0)50%,rgba(0,70,209,0.15)100%)] clip-path-custom"
     >
-      <Snowfall snowflakeCount={20} color="beige" />
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
